@@ -1,0 +1,99 @@
+/* Arka plan resminin eklenmesi*/
+body {
+  background-image: url(checklist-bg.jpg);
+  background-size: cover;
+}
+
+/* Renklerin belirlenmesi*/
+:root {
+  --soft-green: #d3ebcd;
+  --soft-blue: #aedbce;
+  --soft-purple: #839aa8;
+  --purple: #635666;
+  --delete: #990000;
+}
+
+/* Ana içeriğin ortalanması */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Başlık bölümü*/
+.title {
+  font-size: 64px;
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--purple);
+  background-color: var(--soft-green);
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Girdi ve butonun düzenlenmesi*/
+input {
+  font-size: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button {
+  font-size: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -5px;
+  color: var(--purple);
+  background-color: var(--soft-green);
+  font-family: monospace;
+  font-weight: 700;
+  border: 0.1px solid;
+  cursor: pointer;
+}
+
+/* Liste elemanlarının düzenlenmesi*/
+.list-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  border: 1px solid var(--purple);
+  list-style: none;
+  width: 900px; /* burada bir sorun var */
+  background-color: var(--soft-blue);
+  color: var(--purple);
+  font-family: monospace;
+}
+
+label {
+  margin-left: 20px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.fa-trash-can {
+  color: var(--delete);
+  cursor: pointer;
+}
+
+.fa-pen-to-square {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  transform: scale(3);
+  display: inline-blocks;
+}
+
+.check-span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
